@@ -8,9 +8,9 @@ const MONGODB_URI = process.env.MONGODB_URI;
 // async function we are gonna export and will be importing in out main file (server.js in this case)
 const connectDB = async ()=>{
     try{
-        console.log(MONGODB_URL + ' before')
+        console.log(MONGODB_URI + ' before')
         const conn = await mongoose.connect(MONGODB_URI);
-        console.log(MONGODB_URL + ' after')
+        console.log(MONGODB_URI + ' after')
         console.log('mongodb connected');
     }catch(er){
         console.log(er.message);

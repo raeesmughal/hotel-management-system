@@ -16,7 +16,7 @@ const personSchema = new Schema({
     },
     role:{
         type:String,
-        enum:['manager','waiter','chef','sweeper'],
+        enum:['manager','waiter','chef','sweeper','owner'],
     },
     email:{
         type:String,

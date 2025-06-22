@@ -41,7 +41,7 @@ router.get('/menu',async(req,res)=>{
 
         res.status(200).json({
             success:true,
-            newPersonCreated: allDishes,
+            menu : allDishes,
         })
 
     }catch(er){
@@ -78,7 +78,7 @@ router.put('/updatedish/:id',async(req,res)=>{
 
         res.status(200).json({
             success:true,
-            "updated person": updatedDish,
+            "updated dish": updatedDish,
         })
 
     }catch(er){
